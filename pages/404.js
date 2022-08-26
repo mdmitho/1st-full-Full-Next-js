@@ -1,7 +1,11 @@
 import Link from 'next/link';
-
+import {useRouter} from "next/router"
 
 const ErrorPage = () => {
+  const router = useRouter()
+  const handleInput =()=>{
+    router.push("/")
+  }
     return (
       <div>
         <nav>
@@ -24,7 +28,12 @@ const ErrorPage = () => {
           </ul>
         </nav>
         <h1>...................404........... not avalavil......</h1>
-        <a href="home"> Back to homePage</a>
+        {/* <Link href="home">
+          <a> Back to homePage</a>
+        </Link> */}
+
+        {/* <a onClick={()=> router.push("/")}> Back to homePage</a> */}
+        <a onClick={handleInput}> Back to homePage</a>
       </div>
     );
 };
