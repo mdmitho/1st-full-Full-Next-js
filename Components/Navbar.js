@@ -3,10 +3,15 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
+      <style>
+        {`a{
+          margin:5px
+        }`}
+      </style>
       <nav>
         <ul>
           <Link href="/">
-            <a>Home</a>
+            <a >Home</a>
           </Link>
           <Link href="/about">
             <a>About</a>

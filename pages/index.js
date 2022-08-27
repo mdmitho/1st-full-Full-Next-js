@@ -1,10 +1,14 @@
 
 import Navbar from '../Components/Navbar';
-import styles from '../styles/Home.module.css'
+
+import Head from "next/head"
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Home Page</title>
+      </Head>
       <Navbar/>
       <h1 style={{color:"red"}}>hello world 1</h1>
 
